@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Musica Para Todos</string>
+    <string name="title_banner">Generador de escalas</string>
+    <string-array name="notes_array">
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+</resources>
