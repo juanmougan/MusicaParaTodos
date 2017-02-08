@@ -52,6 +52,16 @@ public class ScalesProvider {
                 return getScaleC();
             case "D":
                 return getScaleD();
+            case "E":
+                return getScaleE();
+            case "F":
+                return getScaleF();
+            case "G":
+                return getScaleG();
+            case "A":
+                return getScaleA();
+            case "B":
+                return getScaleB();
             default:
                 return new String[0];
         }
