@@ -1,7 +1,9 @@
 package com.github.juanmougan.musicaparatodos;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -31,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 String note = spinner.getSelectedItem().toString();
                 String[] scale = MainActivity.this.scalesProvider.getScaleForNote(note);
-                scaleTextView.setText(MainActivity.this.joinStrings(scale));
+                scaleTextView.setTextColor(Color.RED);
+                scaleTextView.setText(TextUtils.join(", ", scale));
             }
 
             @Override
@@ -41,15 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-    }
-
-    private String joinStrings(String[] strings) {
-        StringBuilder sb = new StringBuilder();
-        for (String s : strings) {
-            if (sb.length() > 0) sb.append(',');
-            sb.append("'").append(s).append("'");
-        }
-        return sb.toString();
     }
 
 }

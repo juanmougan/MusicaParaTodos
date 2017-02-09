@@ -8,12 +8,12 @@ import java.util.List;
 public class ScalesProvider {
 
     String[] scaleC = new String[]{"C", "D", "E", "F", "G", "A", "B"};
-    String[] scaleD = new String[]{"D", "E", "F#", "G", "A", "B", "C#"};
-    String[] scaleE = new String[]{"C", "D", "E", "F", "G", "A", "B"};
-    String[] scaleF = new String[]{"C", "D", "E", "F", "G", "A", "B"};
-    String[] scaleG = new String[]{"C", "D", "E", "F", "G", "A", "B"};
-    String[] scaleA = new String[]{"C", "D", "E", "F", "G", "A", "B"};
-    String[] scaleB = new String[]{"C", "D", "E", "F", "G", "A", "B"};
+    String[] scaleD = new String[]{"D", "E", "F♯", "G", "A", "B", "C♯"};
+    String[] scaleE = new String[]{"E", "F♯", "G♯", "A", "B", "C♯", "D♯"};
+    String[] scaleF = new String[]{"F", "G", "A", "B♭", "C", "D", "E"};
+    String[] scaleG = new String[]{"G", "A", "B", "C", "D", "E", "F♯"};
+    String[] scaleA = new String[]{"A", "B", "C♯", "D", "E", "F♯", "G♯"};
+    String[] scaleB = new String[]{"B", "C♯", "D♯", "E", "F♯", "G♯", "A♯"};
 
     public ScalesProvider() {
     }
@@ -52,6 +52,16 @@ public class ScalesProvider {
                 return getScaleC();
             case "D":
                 return getScaleD();
+            case "E":
+                return getScaleE();
+            case "F":
+                return getScaleF();
+            case "G":
+                return getScaleG();
+            case "A":
+                return getScaleA();
+            case "B":
+                return getScaleB();
             default:
                 return new String[0];
         }
